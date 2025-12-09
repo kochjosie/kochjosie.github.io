@@ -1,3 +1,131 @@
 body {
-  background-color: fff8d1;
+  background-color: #ffffd9;
+  font-family: "nhg", sans-serif;
+}
+
+#page-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	gap: 20px;
+}
+
+#home-title {
+	width: 1000px;
+	height: 250px;
+	border: 1px solid black;
+	
+	display: flex;
+}
+
+#link-bar {
+	width: 1000px;
+	height: 50px;
+	border: 1px solid black;
+	
+	display: flex;
+}
+
+#home-content {
+	display: flex;
+	gap: 20px;
+}
+
+#col-one {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+#quick-updates {
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+}
+
+#pic-one {
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+}
+
+#home-feed {
+	width: 550px;
+	height: 600px;
+	border: 1px solid black;
+}
+
+#col-three {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+#pic-two {
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+}
+
+#pic-three {
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+}
+
+#pic-four {
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+}
+
+#pic-five {
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+}
+
+#petersburg-page-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+#petersburg-title-block {
+	display: flex;
+	gap: 20px;
+}
+
+#nicolas-pic {
+	width: 200px;
+	height: 200px;
+}
+
+#petersburg-title {
+	width: 600px;
+	height: 200px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	font-size: 24px;
+}
+
+#daniel-pic {
+	width: 200px;
+	height: 200px;
+}
+
+#intro-container{
+	width: 600px;
+	height: 200px;
+	
+	font-size: 24px;
+}
+
+#game-container {
+	width: 600px;
+	height: 100px;
 }
