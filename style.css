@@ -1,29 +1,67 @@
 body {
-  background-color: #ffffd9;
-  font-family: "nhg", sans-serif;
+	background-color: #fffcdd;
 }
 
-#page-container {
+h1 {
+	font-family: neue-kabel, sans-serif;
+	font-weight: 700;
+}
+
+p {
+	font-family: ivyora-text, serif; 
+	font-weight: 400;
+}
+
+.page-container {
 	display: flex;
 	flex-direction: column;
-	align-items: center; 
+	align-items: center;
 	gap: 20px;
 }
 
 #home-title {
+	background-color: #392423;
 	width: 1000px;
 	height: 250px;
-	border: 1px solid black;
+	border-radius: 250px;
+	border: 1px solid #221515; 
 	
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	color: #fffcdd;
+	font-size: 60px;
 }
 
 #link-bar {
+	background-color: #f49f9e;
 	width: 1000px;
 	height: 50px;
-	border: 1px solid black;
+	border-radius: 50px;
+	border: 1px solid #ab0f1b; 
+	
+	font-family: ivyora-text, serif; 
+	font-weight: 700;
+	font-style: italic;
 	
 	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+a {
+  color: #ab0f1b;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #db7c84;
+  text-decoration: underline;
+}
+
+.emoji {
+  font-style: normal;
 }
 
 #home-content {
@@ -37,15 +75,39 @@ body {
 	gap: 20px;
 }
 
-#quick-updates {
-	width: 300px;
-	height: 300px;
-	border: 1px solid black;
+.envelope-box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.envelope {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.paper-text {
+  position: absolute;
+
+  top: 55px;
+  left: 50px;
+  width: 270px;
+  height: 250px;
+
+  padding: 10px;
+  overflow-y: auto;
+
+  font-size: 16px;
+  line-height: 1.4;
+  color: #392423;
+  
+  overflow: hidden;
 }
 
 #pic-one {
-	width: 300px;
-	height: 300px;
+	width: 400px;
+	height: 400px;
 	border: 1px solid black;
 }
 
@@ -61,10 +123,15 @@ body {
 	gap: 20px;
 }
 
+.small-rounded {
+	border-radius: 3px;
+}
+
 #pic-two {
 	width: 150px;
 	height: 150px;
-	border: 1px solid black;
+	border: 1px solid #221515;
+	border-radius: 3px;
 }
 
 #pic-three {
@@ -128,4 +195,44 @@ body {
 #game-container {
 	width: 600px;
 	height: 100px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.writing-text {
+	margin: 1.2em;
+}
+
+#writing-header {
+	text-align: center;
+	color: #392423;
+	font-family: neue-kabel, sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 30px;
+}
+
+#writing-links {
+	background-color: #f49f9e;
+	height: 1000px;
+	width: 600px;
+	border: 1px solid black;
+	border-radius: 10px;
+	overflow: auto;
+	font-family: ivyora-text, serif; 
+	font-weight: 700;
+	font-style: italic;
+	font-size: 20px;
 }
