@@ -1,5 +1,4 @@
 body {
-	background-color: #fffcdd;
 }
 
 h1 {
@@ -15,10 +14,6 @@ p {
 html, body {
 	/*cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1032.ani), 
 	url(https://cur.cursors-4u.net/nature/nat-11/nat1032.gif), auto !important;*/
-}
-
-#petersburg-body {
-	background: white;
 }
 
 .page-container {
