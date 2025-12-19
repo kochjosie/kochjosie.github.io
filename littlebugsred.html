@@ -6,7 +6,7 @@
 	
   </head>
   <body>
-	<canvas id="canvas" width="300" height="200"></canvas>
+	<canvas id="canvas" width="200" height="200"></canvas>
 		<script>
 			//VERBS
 			//Function calls built into JavaScript: Date.now(), Math.sin(), Array.from()
@@ -18,7 +18,7 @@
 			const canvas = document.getElementById("canvas");	//Function call that says "hey grab me that thing!"
 			const context = canvas.getContext("2d");			//2d is a drawing mode, creates a 2d rendering space
 			
-			const dots = Array.from({length: 240}, () => ({		//Creates MANY dots. All dots will carry their own x and y coordinate.
+			const dots = Array.from({length: 360}, () => ({		//Creates MANY dots. All dots will carry their own x and y coordinate.
 				x: canvas.width/2 + (Math.random()-0.5)*200,	//Array.from() says "make an array and make it this long and here's HOW to fill it"
 				y: canvas.height/2 + (Math.random()-0.5)*200,	//I tell array.from to fill x values and y values using Math.random()
 				phase : Math.random() * Math.PI * 2,				//Creating a phase part of the array as well which will be random
