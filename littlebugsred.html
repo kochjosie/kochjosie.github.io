@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    
+    <title></title>
+	
+  </head>
+  <body>
+	<canvas id="canvas" width="600" height="350"></canvas>
+		<script>
+			//VERBS
+			//Function calls built into JavaScript: Date.now(), Math.sin(), Array.from()
+			//Function calls built into the browser: document.getElementById(), .getContext(), .beginPath(), .arc() <- apart of the 2d rendering context, requestAnimationFrame()
+			
+			//NOUNS
+			//Properties used: .fillStyle, .fillRect
+			
+			const canvas = document.getElementById("canvas");	//Function call that says "hey grab me that thing!"
+			const context = canvas.getContext("2d");			//2d is a drawing mode, creates a 2d rendering space
+			
+			const dots = Array.from({length: 240}, () => ({		//Creates MANY dots. All dots will carry their own x and y coordinate.
+				x: canvas.width/2 + (Math.random()-0.5)*200,	//Array.from() says "make an array and make it this long and here's HOW to fill it"
+				y: canvas.height/2 + (Math.random()-0.5)*200,	//I tell array.from to fill x values and y values using Math.random()
+				phase : Math.random() * Math.PI * 2,				//Creating a phase part of the array as well which will be random
+				vx : 0, 
+				vy : 0	//Add vx and vy to each dot
+			}));
+			
+			let cx = canvas.width / 2;
+			let cy = canvas.height / 2;
+			
+			function draw() {
+				//fades canvas so that we can see the dot trail
+				context.fillStyle = "rgba(255,255,255,0.5)";		//Property which will fill shapes with the stated color
+																	//Alpha is the fourth term. Alpha = 1 => no trail; Alpha = 0 => no wash, turns to blob
+																	//tldr: alpha is how much the page forgets
+				context.fillRect(0,0,canvas.width,canvas.height);	//"Paints" the rectangle with the color of fill style (whichever was stated last), (0,0) says to start at the top left
+			
+				const t2 = Date.now() * 0.0002;			//Constant updater
+				
+				//Add randomness to center variables
+				cx += (Math.random() - 0.5) * 4.0;
+				cy += (Math.random() - 0.5) * 4.0;
+				
+				//Make sure your "drunk" values still do drift back to the real center
+				cx += (canvas.width/2 - cx) * 0.005;		//Same method of pulling as before
+				cy += (canvas.height/2 - cy) * 0.005;
+				
+				//slow curved wandering
+				const t = Date.now() * 0.001;
+				
+				for (const d of dots) {						//Do the same thing for every little guy in the array 'Dots'
+					//replaces elliptical movement of sine and cosine with more randomness
+					d.vx += (Math.random()-0.5) * 0.8;
+					d.vy += (Math.random()-0.5) * 0.8;
+					
+					//creates pulls on the vx and vys based on the center and the mouse
+					//d.vx += (cx - d.x) * 0.0008;	//Same method of pulling as before
+					//d.vy += (cy - d.y) * 0.0008;
+					//d.vx += (mx - d.x) * 0.0015;
+					//d.vy += (my - d.y) * 0.0015;
+					
+					//drag
+					d.vx *= 0.92;
+					d.vy *= 0.92;
+					
+					//update dot with v
+					d.x += d.vx;
+					d.y += d.vy;
+					
+					//add noise
+					//d.x += (Math.random() - 0.5) * 0.4;
+					//d.y += (Math.random() - 0.5) * 0.4;
+					
+					//add pull to the center
+					//d.x += (cx - d.x) * 0.001;		//weakened pull to the center (*0.001)
+					//d.y += (cy - d.y) * 0.001;
+					
+					//pull to the mouse
+					//d.x += (mx - d.x) * 0.01;		//pull to the mouse is fairly strong (*0.01)
+					//d.y += (my - d.y) * 0.01;
+					
+					//make the dot change color
+					//const hue = (Date.now() * 0.02) % 360;			//Continuously updates color based on the time, gives color as a degree on the color wheel (orange toward 0, purple towards 360)
+					context.strokeStyle = "red"; 	//Backtick is required to enter the word, "" would turn it into a string. Strokes use strokeStyle instead of fillStyle
+					context.lineWidth = 0.5;
+					
+					//draw the dot- this is what you change to change shape
+					context.beginPath();
+					context.moveTo(d.x, d.y);
+					context.lineTo(d.x + d.vx * 2, d.y + d.vy * 2);
+					context.stroke();
+
+
+				}
+				
+				requestAnimationFrame(draw);			//Call this function again right before the browser refreshes the screen (considered more efficient)
+			}
+			
+			context.fillStyle = "white";
+			context.fillRect(0,0,canvas.width,canvas.height);
+
+			//MOUSE LISTENER
+			//let mx = canvas.width/2, my = canvas.height/2;
+			//canvas.addEventListener("mousemove", e => {
+				//const r = canvas.getBoundingClientRect();
+				//mx = e.clientX - r.left;
+				//my = e.clientY - r.top;
+			//})
+
+			draw();
+		</script>
+  </body>
+</html>
+
+<!-- Why I used Date.now() rather than Math.random(): Date.now() is preferred for smooth and predictable motion (especially as it concerns sine and cosine).
+	Math.random() will create jitter, noise and shaking -->
+	
+<!-- Takeaway from many dots: Essentially just create an array and then create a loop for each of the dots. This means you'll have to replace all the variables x and y
+	with d.x and d.y-->

@@ -12,6 +12,11 @@ p {
 	font-weight: 400;
 }
 
+html, body {
+	cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1032.ani), 
+	url(https://cur.cursors-4u.net/nature/nat-11/nat1032.gif), auto !important;
+}
+
 .page-container {
 	display: flex;
 	flex-direction: column;
@@ -58,6 +63,13 @@ a {
 a:hover {
   color: #db7c84;
   text-decoration: underline;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1032.ani), 
+	url(https://cur.cursors-4u.net/nature/nat-11/nat1032.gif), auto !important;
+}
+
+button:hover{
+	cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1032.ani), 
+	url(https://cur.cursors-4u.net/nature/nat-11/nat1032.gif), auto !important;
 }
 
 .emoji {
@@ -220,8 +232,14 @@ a:hover {
 	color: #392423;
 	font-family: neue-kabel, sans-serif;
 	font-weight: 700;
-	font-style: italic;
+	font-style: normal;
 	font-size: 30px;
+}
+
+#writing-bio {
+	width: 600px;
+	font-style: normal;
+	font-size: 20px;
 }
 
 #writing-links {
@@ -235,4 +253,11 @@ a:hover {
 	font-weight: 700;
 	font-style: italic;
 	font-size: 20px;
+}
+
+.spread { display: none; } /*this makes it so that you only see one page at a time combined with some js*/
+
+#zine-buttons {
+	display: flex;
+	flex-direction: row;
 }
