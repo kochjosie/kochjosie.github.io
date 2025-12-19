@@ -13,8 +13,8 @@ p {
 }
 
 html, body {
-	cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1032.ani), 
-	url(https://cur.cursors-4u.net/nature/nat-11/nat1032.gif), auto !important;
+	/*cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1032.ani), 
+	url(https://cur.cursors-4u.net/nature/nat-11/nat1032.gif), auto !important;*/
 }
 
 .page-container {
@@ -60,7 +60,7 @@ a {
   text-decoration: underline;
 }
 
-a:hover {
+/*a:hover {
   color: #db7c84;
   text-decoration: underline;
   cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1032.ani), 
@@ -70,7 +70,7 @@ a:hover {
 button:hover{
 	cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1032.ani), 
 	url(https://cur.cursors-4u.net/nature/nat-11/nat1032.gif), auto !important;
-}
+}*/
 
 .emoji {
   font-style: normal;
@@ -169,11 +169,17 @@ button:hover{
 	flex-direction: column;
 	align-items: center;
 	gap: 20px;
+	background: white;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 #petersburg-title-block {
 	display: flex;
 	gap: 20px;
+}
+
+.petersburg-text {
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 #nicolas-pic {
