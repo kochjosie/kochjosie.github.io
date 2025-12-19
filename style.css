@@ -17,6 +17,10 @@ html, body {
 	url(https://cur.cursors-4u.net/nature/nat-11/nat1032.gif), auto !important;*/
 }
 
+#petersburg-body {
+	background: white;
+}
+
 .page-container {
 	display: flex;
 	flex-direction: column;
