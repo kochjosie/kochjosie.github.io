@@ -1,65 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    
-    <link href="style.css" type="text/css" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.typekit.net/pbp4wae.css">
-	
-    <script src="script.js"></script>
-    
-    <title>Josie's Page</title>
-  
-  </head>
-  <body>
-	<div class="page-container">
-		<div id="home-title">
-			<h1>Josephine Koch</h1>
-		</div>
-		<div id="link-bar">
-			<a href="writinghome.html">Writing<span class = "emoji"> 📓</span></a>
-			<a href="cookinghome.html">Cooking<span class = "emoji"> 🍅</span></a>
-			<a href="url">Art<span class = "emoji"> 🖌️</span></a>
-			<a href="url">Electronics<span class = "emoji"> 💡</span></a>
-			<a href="url">Clothing<span class = "emoji"> 🧵</span></a>
-			<a href="url">Contact<span class = "emoji"> ❤️</span></a>
-		</div>
-		<div id="home-content">
-			<div id="col-one">
-				<div class="envelope-box">
-					<img src="envelope.png" class="envelope">
-
-					<div class="paper-text">
-					<p>12/10/25 — Added this update log! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<head>
+		<title>Josie's Page</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://use.typekit.net/pbp4wae.css">
+	</head>
+	<body>
+		<div id="home-page">
+			<div id="header">
+				<h1 id="name">Josephine Koch</h1>
+			</div>
+			<div id="link-bar">
+				<a href="">Writing</a>
+				<a href="">Cooking</a>
+				<a href="">Coding & Electronics</a>
+				<a href="">Art</a>
+				<a href="">Other Makes</a>
+				<a href="">Contact</a>
+			</div>
+			<div id="home-content">
+				<div id="c1">
+					<div id="updates">
+						<div id="update-header"><h1>Updates</h1></div>
+						<div id="update-text">
+							<p class="update">12/22/25: I added new icons to my St. Petersburg Paradox project and my about section. 
+								I also added this update section and updated the github pages.</p>
+							<p class="update">The next update will go here!</p>
+						</div>
+						<div id="update-buttons">
+							<button class="prev">⬅️</button>
+							<button class="next">➡️</button>
+							<script src="updates.js"></script>
+						</div>
+					</div>
+					<div id="many-paths-container">
+						<canvas id="many-paths" width="300" height="300"></canvas>
+						<script src="manypaths.js"></script>
 					</div>
 				</div>
-				<div id="pic-one">
+				<div id="c2"></div>
+				<div id="c3">
+					<div id="icon1" class="home-icons">
+						<a href="">
+							<img src="bwstpetersburg150sq.png" alt="St. Petersburg" />
+						</a>
+					</div>
+					<div id="icon2" class="home-icons"></div>
+					<div id="icon3" class="home-icons"></div>
+					<div id="icon4" class="home-icons">
+						<a href="">
+							<img src="me150sq.png" alt="About Me" />
+						</a>
+					</div>
 				</div>
-			</div>
-			<div id="home-feed">
-				<div id="feed-title">
-					
-				</div>
-			</div>
-			<div id="col-three">
-				<div id="pic-two">
-					<a href="petersburg.html">
-						<img src="stpetersburg.png" alt="St. Petersburg Paradox" class="small-rounded">
-					</a>
-				</div>
-				<div id="pic-three">
-				</div>
-				<div id="pic-four">
-				</div>
-				<div id="pic-five">
-				</div>
-				<a href="littlebugsred.html">Little bugs, red</a>
-				<a href="littlebugsblue.html">Little bugs, blue</a>
-				<a href="butterflycurve.html">Butterfly curve</a>
-				<a href="animatedcosine.html">Animated cosine</a>
-				<a href="colorfulwindingpaths.html">Rainbow cottoncandy</a>
-				<a href="mouse-bias.html">Follow me</a>
 			</div>
 		</div>
-	</div>
-  </body>
+	</body>
 </html>
