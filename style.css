@@ -3,6 +3,11 @@ h1 {
     font-weight: 700;
 }
 
+h2 {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 500;
+}
+
 a {
     font-family: "times-new-roman", serif;
     font-weight: 700;
@@ -60,6 +65,10 @@ p {
     margin: 5px;
 }
 
+#many-paths-container {
+    background: black;
+}
+
 #updates {
     display: flex;
     flex-direction: column;
@@ -100,13 +109,120 @@ p {
 #c2 {
     height: 640px;
     width: 500px;
-    border: 1px solid red;
     
+}
+
+#c2-header {
+    height: 50px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
+
+#c2-text {
+    height: 590px;
+    width: 500px;
+    border: 1px solid black;
+    overflow: auto;
 }
 
 .home-icons {
     height: 150px;
     width: 150px;
-    border: 1px solid blue;
     margin: 5px;
+}
+
+#icon3 {
+    border: 1px solid blue;
+}
+
+.secondary-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondary-page-title {
+    font-size: 62px;
+}
+
+#writing-container {
+    height: 1000px;
+    width: 500px;
+    overflow: auto;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+#writing-row {
+    display: flex;
+    flex-direction: row;
+}
+
+#writing-about {
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+}
+
+#elec-projects {
+    border: 1px solid black;
+    height: 600px;
+    width: 300px;
+    margin: 5px;
+}
+
+#coding-row {
+    display: flex;
+    flex-direction: row;
+}
+
+#coding-gallery {
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+    margin: 5px;
+}
+
+.media-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.media-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+#petersburg-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#game-about {
+    border: 1px soldi black;
+    width: 600px;
+}
+
+#zine-container {
+    border: 1px solid black;
+    width: 1000px;
+    height: 700px;
+    margin: 5px;
+}
+
+#zine-title {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-size: 48px;
+    width: 1000px;
+    text-align: center;
 }

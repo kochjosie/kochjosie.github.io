@@ -1,24 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
+const pages = document.querySelectorAll(".page");
 
-  const spreads = document.querySelectorAll(".spread");
-  let current = 0;
+let u = 0;
 
-  function showSpread(i) {
-    spreads.forEach(s => s.style.display = "none");
-    spreads[i].style.display = "block";
-  }
-	
-	spreads[0].style.display = "block";
-	
-  next.onclick = () => {
-    if (current < spreads.length - 1) current++;
-    showSpread(current);
-  };
+function turn() {
+    pages.forEach((el, i) => {
+        el.style.display = i === u ? "block" : "none";
+    });
+}
 
-  prev.onclick = () => {
-    if (current > 0) current--;
-    showSpread(current);
-  };
+document.querySelector(".prev").onclick = () => {
+    if (u > 0) u--;
+    turn();
+};
 
-  showSpread(current);
-});
+document.querySelector(".next").onclick = () => {
+    if (u < pages.length - 1) u++;
+    turn();
+};
+
+turn();
