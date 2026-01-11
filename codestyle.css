@@ -1,0 +1,30 @@
+h1 {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+h2 {
+    font-family: times-new-roman, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.coding-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coding-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coding-caption {
+    width: 500px;
+    text-align: center;
+    margin: 10px;
+}
