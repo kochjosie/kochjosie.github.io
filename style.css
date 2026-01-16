@@ -269,7 +269,45 @@ p {
 }
 
 .tapestry {
-    border: 1px solid black;
+    border: 2px solid yellowgreen;
     width: 100px;
     height: 400px;
+}
+
+#art-page-description {
+    width: 600px;
+    text-align: center;
+    font-family: times-new-roman;
+    font-style: italic;
+    margin: 10px;
+    font-size: 18px;
+}
+
+#art-gallery {
+    height: 1000px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    align-items: center;
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+    color: red;
+}
+
+.art-piece {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.art-note {
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
 }
