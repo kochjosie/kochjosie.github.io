@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="codestyle.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pbp4wae.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5/lib/p5.min.js"></script>
+<!-- insert after p5.js -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/p5.capture@1.6.0/dist/p5.capture.umd.min.js"></script>-->
+    <title>Heart</title>
+  </head>
+  <body>
+    <div class="coding-page-container">
+      <h1>iHeart U</h1>
+      <h2>01/16/2026</h2>
+
+    <div id="coding-content" class="coding-content">
+        <div id="canvas-holder"></div>
+    </div>
+    <script src="heartv2.js"></script>
+    <div class="coding-caption">
+      <p>I think this is my best coding sketch I've made yet. I will walk through the process very 
+        generally, in case anyone is ever curious.
+      </p>
+      <p>First, I practiced making a heart shape using bezier curves with the p5 function bezierVertex. 
+        This gave me an idea of what to do. From the snowflake project yesterday, I knew using regions is 
+        the best way to go about this. However, I wasn't sure how to do curved lines yet.
+      </p>
+      <p>
+        Next, I created the bounding box. This bounding box shares the same max x and max y as the 
+        heart, but there's a lot of extra space too. This is where testing comes in, and this was the hardest 
+        part in my opinion. Essentially, you test whether or not a point is both inside the heart and the box 
+        by testing all the x and y values in the array containing the outline of the heart two at a time. Later, 
+        we'll input random points from within the bounding box into this function. So, this function takes 
+        random points from the bounding box and asks, "Is one part of the previous-current segment above the point 
+        and the other part below it?" If yes, the edge crosses the horizontal line drawn from the point. If no, 
+        the edge doesn't. Next, we check where the point is in relation to the edge. If it crosses the curve zero 
+        times, it's outside. If it crosses an odd number of times, it's inside. If it crosses an even number of times, 
+        it's outside. I just learned this is called the ray-casting algorithm! I was really confused at first, but 
+        I think I might make a drawing to explain it because it's really cool once you understand it.
+      </p>
+      <p>
+        With this function, I could populate the points of the heart. I wrote a function that generates random 
+        points within the bounding box, tests whether they're inside the heart, and if they are, adds them to the 
+        array that will be drawn this run.
+      </p>
+      <p>
+        For the final part of the math/structural sketch, I wanted to make sure that the points still pulled back 
+        towards the center even though I had added a random velocity to each point's displacement. I originally tried 
+        to average the center and the given point's position, but this was way too much. Instead, I found that the p5 
+        library has the lerp() function, which pulls a value to another. This was perfect! And finally, when messing 
+        around with the lerp amount, I thought it was so cool that you could essentially refine an image by having 
+        the lerp amount very low at first and then increasing it over time. Then I thought, I would love it if this 
+        animation repeated. Repeated -> oscillation -> use sine! So I used the Math.sin() and millis() functions to pulse 
+        the heart over time.
+      </p>
+      <p>
+        I'm really happy with this sketch, and I've noticed javascript is getting easier every time. This didn't take 
+        me a crazy amount of time to make, I had class most of today, and it wasn't a huge stress either. Yay!
+      </p>
+    </div>
+  </body>
+</html>
