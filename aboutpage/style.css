@@ -1,0 +1,93 @@
+:root {
+    --neon-pink: #FF0059;
+    --neon-yellow: #D9FF00;
+    --neon-green: #00FFA6;
+}
+
+body {
+    background-color: #FFEBF3;
+    margin: 0;
+    padding: 0;
+}
+
+.page-container {
+    height: 100vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.page-contents {
+    height: 75vw;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header {
+    height: 18vw;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "tourney-variable", sans-serif;
+    font-variation-settings: "wdth" 100, "wght" 200;
+    font-style: normal;
+    font-size: 6vw;
+    color: var(--neon-pink);
+}
+
+h1:hover {
+    font-size: 13vw;
+    cursor: pointer;
+}
+
+#column-one {
+    height: 75vw;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#selfie, #selfie-block {
+    height: 30vw;
+    width: 30vw;
+}
+
+#quick-facts {
+    height: 44vw;
+    width: 30vw;
+}
+
+#facts-table, tr, th, td {
+    border: 1px solid var(--neon-pink);
+    justify-content: space-evenly;
+    font-family: "clarendon-urw", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.35vw;
+    text-align: center;
+}
+
+#about-text {
+    background: url("aboutbgdithere2.png") no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    border: 2px solid var(--neon-yellow);
+    height: 75vw;
+    width: 58vw;
+}
+
+#about-txt-content {
+    font-size: 1.6vw;
+    font-family: "clarendon-urw", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
