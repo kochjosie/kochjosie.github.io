@@ -58,6 +58,12 @@ h1:hover {
     font-size: 2vw;
 }
 
+/*
+a:visited {
+    color: #00D9FF;
+}
+*/
+
 a:link {
     color: var(--neon-yellow);
 }
@@ -65,10 +71,6 @@ a:link {
 a:hover {
     color: var(--neon-green);
     font-size: 2.5vw;
-}
-
-a:visited {
-    color: #00D9FF;
 }
 
 #columns {
