@@ -1,0 +1,114 @@
+:root {
+    --dark-purple: #1f0042;
+    --neon-yellow: #d9ff00;
+    --neon-green: #00ffa6;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-image: url("blogbg.jpg");
+    background-size: 100vmax, 100vmax;
+}
+
+.page-container {
+    height: 100vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.page-contents {
+    height: 75vw;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header {
+    height: 18vw;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "tourney-variable", sans-serif;
+    font-variation-settings: "wdth" 100, "wght" 200;
+    font-size: 6vw;
+    color: var(--dark-purple);
+}
+
+h1:hover {
+    font-size: 13vw;
+    cursor: pointer;
+}
+
+#posts {
+    width: 59vw;
+    height: 70vw;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+}
+
+#post-header {
+    font-family: "tourney-variable", sans-serif;
+    font-variation-settings: "wdth" 100, "wght" 1000;
+    font-size: 6vw;
+    color: var(--dark-purple);
+    border: 1px solid white;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#all-posts {
+    width: 45vw;
+    height: 44vw;
+    border: 1px solid white;
+    font-family: clarendon-urw, serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+#tags {
+    width: 30vw;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--dark-purple);
+    border: 1px solid var(--neon-yellow);
+    border-radius: 10px;
+}
+
+#tag-header {
+    font-family: "tourney-variable", sans-serif;
+    font-variation-settings: "wdth" 100, "wght" 1000;
+    color: #E7FF80;
+    font-size: 2.2vw;
+    display: flex;
+    justify-content: center;
+}
+
+#all-tags {
+    width: 26vw;
+    height: 63vw;
+    border: 1px solid white;
+    font-family: clarendon-urw, serif;
+    font-style: normal;
+    font-weight: 300;
+    overflow: auto;
+}
+
+.post-titles {
+    font-family: clarendon-urw, serif;
+    font-style: normal;
+    font-weight: 300;
+}

@@ -1,0 +1,80 @@
+:root {
+    --neon-pink: #FF0059;
+    --neon-yellow: #D9FF00;
+    --neon-green: #00FFA6;
+    --dark-purple-gray: #3D323A;
+    --pea-green: #C8E016;
+}
+
+body {
+    background-color: #8d7d89;
+    margin: 0;
+    padding: 0;
+}
+
+#page-container {
+    height: 100vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header {
+    height: 100px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    width: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "tourney-variable", sans-serif;
+    font-variation-settings: "wdth" 100, "wght" 900;
+    font-style: normal;
+    font-size: 75px;
+    color: var(--dark-purple-gray);
+}
+
+#row {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    justify-content: space-between;
+}
+
+#gallery {
+    width: 630px;
+    height: 750px;
+    overflow: auto;
+}
+
+#other-projects {
+    border: 1px solid #C8E016;
+    border-radius: 5px;
+    width: 250px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+#projects-header {
+    color: #3D323A;
+    font-family: "tourney-variable", sans-serif;
+    font-variation-settings: "wdth" 100, "wght" 900;
+    font-size: 30px;
+}
+
+.sketch-gif {
+    height: 150px;
+    width: 150px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.project {
+    font-family: "clarendon-urw", serif;
+}

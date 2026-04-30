@@ -1,0 +1,56 @@
+:root {
+    --neon-pink: #FF0059;
+    --neon-yellow: #D9FF00;
+    --neon-green: #00FFA6;
+    --dark-purple: #1F0042;
+}
+
+body {
+    background-color: #FFEBF3;;
+}
+
+#page-container, #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: clarendon-urw, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 6vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: var(--neon-pink);
+}
+
+#date {
+    font-family: clarendon-urw, serif;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--neon-pink);
+}
+
+#text {
+    width: 65vw;
+}
+
+.paragraph {
+    color: var(--dark-purple);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: clarendon-urw, serif;
+    font-weight: 400;
+    font-style: normal;
+    text-indent: 2em;
+}
+
+#tags {
+    font-family: clarendon-urw, serif;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--neon-pink);
+}
