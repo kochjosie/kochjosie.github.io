@@ -73,7 +73,7 @@ a:hover {
     font-size: 2.5vw;
 }
 
-#fractal-link:hover {
+#update-link:hover {
     color: var(--neon-green);
     font-size: 1.25vw;
 }

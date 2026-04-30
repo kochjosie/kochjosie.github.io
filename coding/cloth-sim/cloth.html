@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/rrn6jcb.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js" defer></script>
+    </head>
+    <body>
+        <div id="page-container">
+            <div id="title">
+                <h1>My First Cloth Sim!</h1>
+            </div>
+            <div id="subtitle">
+                <p>Completed: 04/28/26</p>
+            </div>
+            <div class="canvas-container">
+                <script src="sketch.js"></script>
+            </div>
+            <div id="caption">
+                <p class="caption-paragraph">
+                    This project was a really long, winding process. I'm going to try to explain it the best I can here. 
+                    It was originally written in Python as it was for a class project. I used the Pygame module as a graphics library,
+                    which I learned from a video by the YouTuber Clear Code. This project began once I finished my Fractal project 
+                    around April 1st.
+                </p>
+                <p class="caption-paragraph">
+                    When I started this project, I set out to make a software simulation of physics for people early in 
+                    an engineering or physics education or with a strictly art and design-based education. I've seen 2D dynamics 
+                    sandboxes before (though actually when doing research for this project, I couldn't really find much). However, 
+                    most of it blackboxes what's actually going on on the computer graphics side. I wanted to create some kind of 
+                    sandbox that shows how soft and hard bodies interact. I figured some kind of changing cloth would be the best 
+                    option for a soft body, particularly because cloth is EVERYWHERE in traditional and digital art. This was the 
+                    simulation choice that would give the most bang for its buck. As I continued through this project, I thought more 
+                    about what "cloth" can model. Hair, human skin clinging to its bone, waves, and more. Of course, I knew once I'd 
+                    decided to do a cloth simulation that I'd likely be using a mass-spring model to track its movement as mass-spring 
+                    models already work for just about everything.
+                </p>
+                <p class="caption-paragraph">
+                    To remedy this transparency issue, I retained the points between sticks in the cloth mesh and retained sliders that are analogs 
+                    for the real-world forces. Why analogs? Well, initially, I created a cloth sim based on equations I had learned in 
+                    physics class. Updating position based on first calculating acceleration from Newton's 2nd Law (using Hooke's Law for force), 
+                    then integrating velocity, then integrating movement. However, the results I got, while somewhat accurate (the mesh slid down 
+                    based on gravity but held up by "pins" up top) had difficulty remaining stable as the animation continued and also did not 
+                    respond well to constraints I tried to apply. I couldn't tell if this was a software issue or a physics-knowledge issue.
+                </p>
+                <p class="caption-paragraph">
+                    This is when I had to start researching. I found an article on Pikuma about cloth simulation and Verlet integration. 
+                    This is where I learned about Verlet integration of course, which is a form of integration position based on implicit 
+                    velocity and not explicit velocity. Essentially, rather than calculating acceleration from force and velocity from acceleration, 
+                    you calculate velocity as the rate of change from position. So, Verlet integration essentially is a position-based analog 
+                    to regular physics-class integration of movement. Similarly, you do a position-based analog of Newton's 3rd law when you 
+                    correct.
+                </p>
+                <p class="caption-paragraph">
+                    In a mass-spring model of cloth, the stretchiness of a fabric is modeled by the stiffness constant (k). Since most data for 
+                    fabric stretchiness is given via Young's Modulus, you need to convert it first, which can be difficult but is still possible. 
+                    Then, you calculate spring force from Hooke's Law and integrate velocity and movement from there. However, this does not lead to 
+                    stable results. Instead, you do a position-based analog! Putting it crudely, spring force wants to expand or compress to go back 
+                    to its rest length. Instead, we store the initial (rest) length of a stick initially by copying the distance between its two 
+                    assigned points. Then, we correct the points back to bring the sticks back to their initial length. Effectively, this does the same thing. 
+                    You wouldn't want to use it in a physics class because energy is not conserved correctly, but in a computer simulation with constraints, 
+                    this is the best option.
+                </p>
+                <p class="caption-paragraph">
+                    I think, in the end, I ended up creating a tool that would be best suited for people learning computer graphics or digital 
+                    art more so than traditional work. I'll need to keep thinking about what would be most helpful for traditional artists, but I 
+                    think this gives me a good "jumping off point" to start with. I'm pretty happy with this project. It may not be the MOST 
+                    impressive thing ever, but I really feel like I've learned a lot more in the direction I'm trying to dive more towards.
+                </p>
+            </div>
+            <div id="link-to-gallery">
+            </div>
+        </div>
+    </body>
+</html>
