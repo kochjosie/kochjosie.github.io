@@ -37,13 +37,14 @@ body {
     font-family: "tourney-variable", sans-serif;
     font-variation-settings: "wdth" 100, "wght" 200;
     font-style: normal;
-    font-size: 6vw;
+    font-size: 4vw;
     color: var(--neon-pink);
 }
 
 h1:hover {
-    font-size: 13vw;
+    font-size: 10vw;
     cursor: pointer;
+    font-variation-settings: "wdth" 100, "wght" 1000;
 }
 
 #links {
@@ -73,7 +74,7 @@ a:hover {
     font-size: 2.5vw;
 }
 
-#update-link:hover {
+.update-link:hover {
     color: var(--neon-green);
     font-size: 1.25vw;
 }

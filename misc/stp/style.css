@@ -1,0 +1,32 @@
+:root {
+    --soft-red: #d94d63;
+    --pea-green: #C8E016;
+}
+
+body {
+    background-color: var(--pea-green);
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+}
+
+#header {
+    font-weight: 700;
+    font-style: normal;
+    color: var(--soft-red);
+}
+
+#book {
+    height: 700px;
+    width: 1000px;
+    border: 2px solid var(--soft-red);
+    border-radius: 5px;
+}
+
+#buttons {
+    margin: 5px;
+}

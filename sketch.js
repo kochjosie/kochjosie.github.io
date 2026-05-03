@@ -53,18 +53,19 @@ class Walker {
   }
   
   step() {
-    let choice = floor(random(4));
-    let velocity = random(1, 9)
-    
-    if (choice == 0) {
-      this.x += velocity;
-    } else if (choice == 1) {
-      this.x -= velocity;
-    } else if (choice == 2) {
-      this.y += velocity;
-    } else if (choice == 3) {
-      this.y -= velocity;
+    let vx = random(-5, 5);
+    let vy = random(-5, 5);
+
+    if (this.x > width || this.x < 0) {
+      vx *= -1;
     }
+
+    if (this.y > height || this.y < 0) {
+      vy *= -1;
+    }
+
+    this.x += vx;
+    this.y += vy;
   }
   
   pulse() {

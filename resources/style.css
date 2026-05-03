@@ -1,0 +1,29 @@
+:root {
+    --soft-red: #d94d63;
+    --robins-egg: #c7dabf;
+    --olive: #96933b;
+    --off-white: #f8f8d1;
+}
+
+body {
+    background-color: var(--off-white);
+}
+
+h1 {
+    color: var(--soft-red);
+    font-family: "tourney-variable", sans-serif;
+    font-variation-settings: "wdth" 100, "wght" 1000;
+    font-style: normal;
+    font-size: 100px;
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resources {
+    font-family: "clarendon-urw", serif;
+    font-weight: 400;
+}
