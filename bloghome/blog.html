@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="https://use.typekit.net/rrn6jcb.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
-  </head>
-  <body>
-    <main>
-        <div class="page-container">
-            <div class="header">
-                <h1>Blog Posts</h1>
+<html>
+    <head>
+        <title>my blog posts</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/rrn6jcb.css">
+        <script src="float.js" defer></script>
+    </head>
+    <body>
+        <div id="page-container">
+            <div id="home-link">
+                <a href="../index.html"><- go back home</a>
             </div>
-            <div class="page-contents">
-                <div id="posts">
-                    <h2 id="post-header">Posts</h2>
-                    <div id="all-posts">
-                        <a class="post-link" href="blogposts/mar426.html">
-                            <h3 class="post-titles">03/04/26: Goodbye, Spotify.</h3>
-                        </a>
-                    </div>
+            <div id="header">
+                <h1 id="heading">blog posts</h1>
+            </div>
+            <div id="blog-posts">
+                <div id="featured">
+                    <h2 id="featured-title">featured posts</h2>
                 </div>
-                <div id="tags">
-                    <div id="tag-header"><h2>Explore by tag:</h2></div>
-                    <div id="all-tags">
-
-                    </div>
+                <div id="all-posts">
+                    <h2 id="all-title">all posts</h2>
+                    <a href="blog-posts/mar426.html" class="post-link">
+                        Goodbye, Spotify.
+                    </a>
                 </div>
             </div>
         </div>
-    </main>
-  </body>
+
+    </body>
 </html>

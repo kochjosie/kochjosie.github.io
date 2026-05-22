@@ -1,13 +1,24 @@
 :root {
-    --neon-pink: #FF0059;
     --neon-yellow: #D9FF00;
-    --neon-green: #00FFA6;
+    --neon-pink: #FF0059;
+    --white: #f6f8f7;
+    --black: #222224;
 }
 
 body {
-    background-color: #FFEBF3;
+    background-color: var(--white);
     margin: 0;
     padding: 0;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--neon-pink);
+  background: var(--neon-yellow);
+}
+
+::selection {
+  color: var(--neon-pink);
+  background: var(--neon-yellow);
 }
 
 .page-container {
@@ -33,11 +44,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "tourney-variable", sans-serif;
-    font-variation-settings: "wdth" 100, "wght" 200;
+    font-family: "clarendon-urw", serif;
     font-style: normal;
     font-size: 6vw;
-    color: var(--neon-pink);
+    color: var(--black);
 }
 
 h1:hover {
@@ -64,9 +74,9 @@ h1:hover {
 }
 
 #facts-table, tr, th, td {
-    border: 1px solid var(--neon-pink);
+    border: 1px solid var(--black);
     justify-content: space-evenly;
-    font-family: "clarendon-urw", serif;
+    font-family: "nimbus-sans", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.35vw;
@@ -74,20 +84,35 @@ h1:hover {
 }
 
 #about-text {
-    background: url("aboutbgdithere2.png") no-repeat center center;
+    background: url("forest.png") no-repeat center center;
     background-size: cover;
     border-radius: 10px;
-    border: 2px solid var(--neon-yellow);
+    border: 2px solid var(--black);
     height: 75vw;
     width: 58vw;
 }
 
 #about-txt-content {
-    font-size: 1.6vw;
-    font-family: "clarendon-urw", serif;
+    font-size: 1.92vw;
+    font-family: "nimbus-sans", sans-serif;
+    color: var(--black);
     font-weight: 400;
     font-style: normal;
     margin-top: 1vw;
     margin-left: 1vw;
     margin-right: 1vw;
+}
+
+#home-link {
+    font-family: "nimbus-sans", sans-serif;
+    color: var(--black);
+}
+
+#home-link:visited {
+    color: var(--black);
+}
+
+#home-link:hover {
+    background: var(--neon-yellow);
+    color: var(--neon-pink);
 }

@@ -1,114 +1,85 @@
 :root {
-    --dark-purple: #1f0042;
-    --neon-yellow: #d9ff00;
-    --neon-green: #00ffa6;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
+    --neon-yellow: #D9FF00;
+    --white: #f6f8f7;
+    --black: #222224;
+    --neon-pink: #FF0059;
 }
 
 body {
-    background-image: url("blogbg.jpg");
-    background-size: 100vmax, 100vmax;
+    background: var(--white);
 }
 
-.page-container {
-    height: 100vw;
-    width: 100vw;
+#page-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+
 }
 
-.page-contents {
-    height: 75vw;
-    width: 90vw;
+#heading {
+    font-family: "clarendon-urw", serif;
+    font-style: normal;
+    color: var(--black);
+    font-size: 5vw;
+}
+
+a {
+    font-family: "nimbus-sans", sans-serif;
+    color: var(--black);
+}
+
+a:visited {
+    font-family: "nimbus-sans", sans-serif;
+    color: var(--black);
+}
+
+a:hover {
+    background: var(--neon-yellow);
+    font-family: "nimbus-sans", sans-serif;
+    color: var(--neon-pink);
+}
+
+#blog-posts {
+    width: 80vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.header {
-    height: 18vw;
-    width: 90vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "tourney-variable", sans-serif;
-    font-variation-settings: "wdth" 100, "wght" 200;
-    font-size: 6vw;
-    color: var(--dark-purple);
-}
+#featured {
+    width: 38vw;
+    height: 60vw;
+    border: 2px solid var(--neon-yellow);
+    border-radius: 10px;
+    background: var(--black);
+    overflow: auto;
 
-h1:hover {
-    font-size: 13vw;
-    cursor: pointer;
-}
-
-#posts {
-    width: 59vw;
-    height: 70vw;
-    display:  flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid white;
-}
-
-#post-header {
-    font-family: "tourney-variable", sans-serif;
-    font-variation-settings: "wdth" 100, "wght" 1000;
-    font-size: 6vw;
-    color: var(--dark-purple);
-    border: 1px solid white;
-    height: 10vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #all-posts {
-    width: 45vw;
-    height: 44vw;
-    border: 1px solid white;
-    font-family: clarendon-urw, serif;
-    font-style: normal;
-    font-weight: 300;
-}
-
-#tags {
-    width: 30vw;
-    display:  flex;
-    flex-direction: column;
-    align-items: center;
-    background: var(--dark-purple);
-    border: 1px solid var(--neon-yellow);
+    width: 38vw;
+    height: 60vw;
+    border: 2px solid var(--black);
     border-radius: 10px;
-}
-
-#tag-header {
-    font-family: "tourney-variable", sans-serif;
-    font-variation-settings: "wdth" 100, "wght" 1000;
-    color: #E7FF80;
-    font-size: 2.2vw;
-    display: flex;
-    justify-content: center;
-}
-
-#all-tags {
-    width: 26vw;
-    height: 63vw;
-    border: 1px solid white;
-    font-family: clarendon-urw, serif;
-    font-style: normal;
-    font-weight: 300;
     overflow: auto;
 }
 
-.post-titles {
-    font-family: clarendon-urw, serif;
-    font-style: normal;
-    font-weight: 300;
+#featured-title, #all-title {
+    font-family: "clarendon-urw", "serif";
+    text-align: center;
+}
+
+#all-title {
+    color: var(--black);
+}
+
+#featured-title {
+    color: var(--neon-yellow);
+}
+
+.post-link {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5vw;
 }

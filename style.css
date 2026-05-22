@@ -1,19 +1,26 @@
 :root {
-    --neon-pink: #1F0042;
     --neon-yellow: #D9FF00;
-    --neon-green: #00FFA6;
+    --neon-pink: #FF0059;
+    --white: #f6f8f7;
+    --black: #222224;
 }
 
 
 body {
-    background-image: url("backgroundimg.png");
-    background-size: 100vmax, 100vmax;
-    margin: 0;
-    padding: 0;
+    background-color: #f6f8f7;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--neon-pink);
+  background: var(--neon-yellow);
+}
+
+::selection {
+  color: var(--neon-pink);
+  background: var(--neon-yellow);
 }
 
 .page-container {
-    height: 100vw;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -34,11 +41,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "tourney-variable", sans-serif;
-    font-variation-settings: "wdth" 100, "wght" 200;
+    font-family: "clarendon-urw", serif;
     font-style: normal;
     font-size: 4vw;
-    color: var(--neon-pink);
+    color: var(--black);
 }
 
 h1:hover {
@@ -53,30 +59,29 @@ h1:hover {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-family: "clarendon-urw", serif;
+    font-family: "nimbus-sans";
     font-weight: 400;
     font-style: italic;
-    font-size: 2vw;
+    font-size: 3.1vw;
 }
 
-/*
 a:visited {
-    color: #00D9FF;
+    color: var(--black);
 }
-*/
 
 a:link {
-    color: var(--neon-yellow);
+    color: var(--black);
 }
 
-a:hover {
-    color: var(--neon-green);
-    font-size: 2.5vw;
+#blog-link:hover, #coding-link:hover, #art-link:hover, #misc-link:hover, #contact-link:hover, .update-link:hover {
+    background: var(--neon-yellow);
+    color: var(--neon-pink);
+    font-size: 4vw;
 }
 
 .update-link:hover {
-    color: var(--neon-green);
-    font-size: 1.25vw;
+    color: var(--neon-pink);
+    font-size: 1.4vw;
 }
 
 #columns {
@@ -94,12 +99,6 @@ a:hover {
     justify-content: space-between;
 }
 
-#music-player {
-    width: 32vw;
-    height: 14vw;
-    border: 1px solid white;
-}
-
 #quick-updates {
     width: 32vw;
     height: 16vw;
@@ -115,11 +114,10 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "tourney-variable", sans-serif;
-    font-variation-settings: "wdth" 100, "wght" 200;
+    font-family: "clarendon-urw", serif;
     font-style: normal;
     font-size: 2vw;
-    color: var(--neon-pink)
+    color: var(--black);
 }
 
 #actual-header:hover {
@@ -130,10 +128,10 @@ a:hover {
 #updates-text {
     width: 32vw;
     height: 7vw;
-    border: 1px solid var(--neon-yellow);
+    border: 2px solid var(--neon-yellow);
     border-radius: 10px;
-    color: var(--neon-pink);
-    font-family: "clarendon-urw", serif;
+    color: var(--black);
+    font-family: "nimbus-sans", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.25vw;
@@ -144,7 +142,7 @@ a:hover {
     margin-top: 1vw;
     margin-left: 1vw;
     margin-right: 1vw;
-    margin-bottom: 1vw;
+    margin-bottom: 2vw;
 }
 
 canvas {
@@ -163,12 +161,13 @@ canvas {
     flex-direction: column;
 }
 
-#reset-note, #cool-stuff {
-    color: var(--neon-pink);
+#cool-stuff {
+    color: var(--black);
     font-family: "clarendon-urw", serif;
     font-weight: 700;
     font-style: italic;
     font-size: 1.25vw;
+    background: var(--neon-yellow);
 }
 
 #right-column {
@@ -191,7 +190,7 @@ canvas {
 #intro {
     height: 52vw;
     width: 40vw;
-    border: 1px solid var(--neon-yellow);
+    border: 2px solid var(--neon-yellow);
     border-radius: 10px;
 }
 
@@ -201,11 +200,11 @@ canvas {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "tourney-variable", sans-serif;
-    font-variation-settings: "wdth" 100, "wght" 200;
+    font-family: "clarendon-urw", serif;
     font-style: normal;
     font-size: 2vw;
-    color: var(--neon-pink);
+    color: var(--black);
+    background: var(--neon-yellow);
 }
 
 #intro-body {
@@ -217,39 +216,14 @@ canvas {
 }
 
 #intro-text {
-    margin-top: 1vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    margin-bottom: 1vw;
-    font-family: "clarendon-urw", serif;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "nimbus-sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2vw;
-}
-
-#graphics {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-#guestbook, #good-sites, #about, #aboutfigpng, #guestbookpng, #linksiconpng {
-    width: 16vw;
-    height: 16vw;
-    border-radius: 10px;
-}
-
-#linksiconpng {
-    border: 1px solid var(--neon-yellow);
-}
-
-#guestbookpng {
-    border: 1px solid var(--neon-pink); 
-}
-
-#aboutfigpng {
-    border: 1px solid var(--neon-yellow);
+    font-size: 3vw;
+    color: var(--black);
 }
 
 #row-two {
@@ -263,4 +237,17 @@ canvas {
 #pengergif {
     width: 7.5vw;
     height: 7.5vw;
+}
+
+.canvas-container {
+    border-radius: 5px;
+    height: 32vw;
+    width: 32vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#computer-img, #book-img, #hand-img {
+    width: 15vw;
+    margin-left: 1.5vw;
 }

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>josie's page</title>
     <link rel="stylesheet" href="https://use.typekit.net/rrn6jcb.css">
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+    <script src="float.js" defer></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
   </head>
@@ -10,16 +12,15 @@
     <main>
         <div class="page-container">
             <div class="header">
-                <h1>Josie's Web Page</h1>
+                <h1 id="heading">josie's site :)</h1>
             </div>
             <div class="page-contents">
                 <div id="links">
-                    <a href="bloghome/blog.html">blog</a>
-                    <a href="coding/coding.html">coding</a>
-                    <a href="electronics.html">electronics</a>
-                    <a href="art/art.html">art</a>
-                    <a href="misc/misc.html">other makes</a>
-                    <a href="contact.html">contact</a>
+                    <a href="bloghome/blog.html" id="blog-link">blog</a>
+                    <a href="coding/coding.html" id="coding-link">coding & electronics</a>
+                    <a href="art/art.html" id="art-link">art</a>
+                    <a href="misc/misc.html" id="misc-link">other makes</a>
+                    <a href="contact/contact.html" id="contact-link">contact</a>
                 </div>
                 <div id="columns">
                     <div id="left-column">
@@ -38,17 +39,19 @@
                                 and there's an about page! Old content will be migrated soon.
                                 <p class="update">04/01/26: Added my <a href="https://kochjosie.github.io/fractalworld/" class="update-link">Fractal 2026 project</a> as a link in the coding section.</p>
                                 </p>
-                                <p class="update">04/30/26: Added a <a href="coding/cloth-sim/cloth.html" class="update-link">final project</a> I made! It's a cloth sim and sort of a baby physics engine? I think? Not sure what words mean...</p>
+                                <p class="update">04/30/26: Added a <a href="coding/clothsim/cloth.html" class="update-link">final project</a> I made! It's a cloth sim and sort of a baby physics engine? I think? Not sure what words mean...</p>
                                 <p class="update">05/02/26: Put my <a href="misc/stp/stpetersburg.html" class="update-link">St. Petersburg Paradox zine</a> onto my other makes page. This was made in December of 2025. I just hadn't moved it here yet. I need to work on a big coding art 
                                 project the next two months or so so I'm not sure how much I'll be updating here!</p>
+                                <p class="update">05/22/26: I did another huge visual rewrite of my site. Will I ever fully finish my site before changing its look a million more times? Probably not. I want to move everything over as soon as possible, which should be faster this time 
+                                    since I'm getting better at coding for web development stuff.
+                                </p>
                             </div>
                             <div id="buttons">
-                                <button class="prev">&#x1F81C;</button>
-                                <button class="next">&#x1F81E;</button>
+                                <button class="prev"><-</button>
+                                <button class="next">-></button>
                             </div>
                         </div>
                         <div class="canvas-container"><script src="sketch.js"></script></div>
-                        <p id="reset-note">Press 'r' to reset the sketch.</p>
                     </div>
                     <div id="right-column">
                         <div id="row-one">
@@ -67,20 +70,20 @@
                                     </p>
                                 </div>
                             </div>
-                            <div id="graphics">
+                            <div id="side-links">
                                 <div id="good-sites">
                                     <a href="resources/resources.html">
-                                        <img src="linksicon.png" id="linksiconpng" alt="a computer with text stating cool and helpful links">
+                                        <img src="computer.png" id="computer-img">
                                     </a>
                                 </div>
                                 <div id="guestbook">
-                                    <a href="">
-                                        <img src="guestbook.png" id="guestbookpng" alt="a figure with the text guestbook overlayed">
+                                    <a href="guestbook/guestbook.html">
+                                        <img src="book.png" id="book-img">
                                     </a>
                                 </div>
                                 <div id="about">
                                     <a href="aboutpage/about.html">
-                                        <img src="aboutfig.png" id="aboutfigpng" alt="a figure with the text about me overlayed">
+                                        <img src="hand.png" id="hand-img">
                                     </a>
                                 </div>
                             </div>

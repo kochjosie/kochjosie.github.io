@@ -1,1 +1,0 @@
-# kochjosie.github.io
