@@ -5,7 +5,6 @@
     --black: #222224;
 }
 
-
 body {
     background-color: #f6f8f7;
 }
@@ -37,20 +36,14 @@ body {
 
 .header {
     height: 18vw;
-    width: 90vw;
+    width: 78vw;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     font-family: "clarendon-urw", serif;
     font-style: normal;
     font-size: 4vw;
     color: var(--black);
-}
-
-h1:hover {
-    font-size: 10vw;
-    cursor: pointer;
-    font-variation-settings: "wdth" 100, "wght" 1000;
 }
 
 #links {
@@ -118,11 +111,6 @@ a:link {
     font-style: normal;
     font-size: 2vw;
     color: var(--black);
-}
-
-#actual-header:hover {
-    font-size: 3.5vw;
-    cursor: pointer;
 }
 
 #updates-text {
@@ -250,4 +238,13 @@ canvas {
 #computer-img, #book-img, #hand-img {
     width: 15vw;
     margin-left: 1.5vw;
+}
+
+#lightbulb-img, #cat-img {
+    width: 10vw;
+    height: 10vw;
+}
+
+#cat-img:hover, #lightbulb-img:hover {
+    cursor: pointer;
 }
