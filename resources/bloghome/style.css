@@ -1,0 +1,85 @@
+:root {
+    --neon-yellow: #D9FF00;
+    --white: #f6f8f7;
+    --black: #222224;
+    --neon-pink: #FF0059;
+}
+
+body {
+    background: var(--white);
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#heading {
+    font-family: "clarendon-urw", serif;
+    font-style: normal;
+    color: var(--black);
+    font-size: 5vw;
+}
+
+a {
+    font-family: "nimbus-sans", sans-serif;
+    color: var(--black);
+}
+
+a:visited {
+    font-family: "nimbus-sans", sans-serif;
+    color: var(--black);
+}
+
+a:hover {
+    background: var(--neon-yellow);
+    font-family: "nimbus-sans", sans-serif;
+    color: var(--neon-pink);
+}
+
+#blog-posts {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#featured {
+    width: 38vw;
+    height: 60vw;
+    border: 2px solid var(--neon-yellow);
+    border-radius: 10px;
+    background: var(--black);
+    overflow: auto;
+
+}
+
+#all-posts {
+    width: 38vw;
+    height: 60vw;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    overflow: auto;
+}
+
+#featured-title, #all-title {
+    font-family: "clarendon-urw", "serif";
+    text-align: center;
+}
+
+#all-title {
+    color: var(--black);
+}
+
+#featured-title {
+    color: var(--neon-yellow);
+}
+
+.post-link {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5vw;
+}

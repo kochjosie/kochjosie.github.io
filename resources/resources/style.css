@@ -1,0 +1,92 @@
+:root {
+    --neon-yellow: #D9FF00;
+    --neon-pink: #FF0059;
+    --white: #f6f8f7;
+    --black: #222224;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--neon-pink);
+  background: var(--neon-yellow);
+}
+
+::selection {
+  color: var(--neon-pink);
+  background: var(--neon-yellow);
+}
+
+body {
+    background: var(--white);
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heading {
+    font-family: "clarendon-urw", sans-serif;
+    color: var(--black);
+}
+
+#home-link {
+    font-family: "nimbus-sans", sans-serif;
+}
+
+a:visited {
+    color: var(--black);
+}
+
+a:hover {
+    background: var(--neon-yellow);
+    color: var(--neon-pink);
+}
+
+#all-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+#educational-links-container {
+    border: 2px solid var(--neon-yellow);
+    border-radius: 10px;
+    width: 38vw;
+    height: 70vw;
+    background: var(--black);
+    color: var(--neon-yellow);
+}
+
+.cool-link, .cool-link:visited, .educational-link, .educational-link:visited {
+    color: var(--neon-yellow);
+    font-family: "nimbus-sans", sans-serif;
+    margin-left: 10px;
+}
+
+.cool-link:hover, .educational-link:hover {
+    color: var(--neon-pink);
+    background: var(--neon-yellow);
+}
+
+#fun-links-container {
+    border: 2px solid var(--neon-yellow);
+    border-radius: 10px;
+    width: 38vw;
+    background: var(--black);
+    color: var(--neon-yellow);
+}
+
+#coding-gallery-title, #big-projects-title {
+    text-align: center;
+    font-family: "clarendon-urw", serif;
+}
+
+#big-projects-title {
+    color: var(--neon-yellow);
+}
+
+#coding-gallery-title {
+    color: var(--neon-yellow);
+}
