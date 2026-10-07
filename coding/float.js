@@ -70,5 +70,3 @@ function makeTextFloat(selector) {
 }
 
 makeTextFloat('#heading');
-makeTextFloat('#coding-gallery-title');
-makeTextFloat('#big-projects-title');

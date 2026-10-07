@@ -56,7 +56,7 @@ body {
     font-family: "nimbus-sans";
     font-weight: 400;
     font-style: italic;
-    font-size: 3.1vw;
+    font-size: 2vw;
 }
 
 a:visited {
@@ -67,15 +67,14 @@ a:link {
     color: var(--black);
 }
 
-#blog-link:hover, #coding-link:hover, #art-link:hover, #misc-link:hover, #contact-link:hover, .update-link:hover {
+#blog-link:hover, #coding-link:hover, #art-link:hover, #misc-link:hover, #contact-link:hover{
     background: var(--neon-yellow);
     color: var(--neon-pink);
-    font-size: 4vw;
+    font-size: 2.75vw;
 }
 
 .update-link:hover {
     color: var(--neon-pink);
-    font-size: 1.4vw;
 }
 
 #columns {
@@ -128,10 +127,8 @@ a:link {
 }
 
 .update {
-    margin-top: 1vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    margin-bottom: 2vw;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 canvas {

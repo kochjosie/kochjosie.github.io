@@ -1,5 +1,5 @@
-const catImgs = ["cat-closed-mouth.png", "cat-open-mouth.png"];
-const bulbImgs = ["bulb-off.png", "bulb-on.png"];
+const catImgs = ["homepage_assets/cat-closed-mouth.png", "homepage_assets/cat-open-mouth.png"];
+const bulbImgs = ["homepage_assets/bulb-off.png", "homepage_assets/bulb-on.png"];
 
 let currentCatIdx = 0;
 let currentBulbIdx = 0;

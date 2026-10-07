@@ -69,9 +69,4 @@ function makeTextFloat(selector) {
     animateLetters();
 }
 
-makeTextFloat('#blog-link');
-makeTextFloat('#coding-link');
-makeTextFloat('#art-link');
-makeTextFloat('#misc-link');
-makeTextFloat('#contact-link');
 makeTextFloat('#heading');

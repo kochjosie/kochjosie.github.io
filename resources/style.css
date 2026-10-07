@@ -5,10 +5,6 @@
     --black: #222224;
 }
 
-body {
-    background-color: #f6f8f7;
-}
-
 ::-moz-selection { /* Code for Firefox */
   color: var(--neon-pink);
   background: var(--neon-yellow);
@@ -19,243 +15,173 @@ body {
   background: var(--neon-yellow);
 }
 
-.page-container {
-    width: 100vw;
+body {
+    background: var(--white);
+}
+
+#page-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.page-contents {
-    height: 75vw;
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.header {
-    height: 18vw;
-    width: 85vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "clarendon-urw", serif;
-    font-style: normal;
+h1, #heading {
+    font-family: "clarendon-urw", sans-serif;
     color: var(--black);
 }
 
-#heading {
-    text-align: center;
-    font-size: 5vw;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-#links {
-    height: 5vw;
-    width: 90vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-family: "nimbus-sans";
-    font-weight: 400;
-    font-style: italic;
-    font-size: 3.1vw;
-}
-
-a:visited {
-    color: var(--black);
-}
-
-a:link {
-    color: var(--black);
-}
-
-#blog-link:hover, #coding-link:hover, #art-link:hover, #misc-link:hover, #contact-link:hover, .update-link:hover {
-    background: var(--neon-yellow);
-    color: var(--neon-pink);
-    font-size: 4vw;
-}
-
-.update-link:hover {
-    color: var(--neon-pink);
-    font-size: 1.4vw;
-}
-
-#columns {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#left-column {
-    height: 53vw;
-    width: 32vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#quick-updates {
-    width: 32vw;
-    height: 16vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#updates-header {
-    width: 32vw;
-    height: 5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "clarendon-urw", serif;
-    font-style: normal;
-    font-size: 2vw;
-    color: var(--black);
-}
-
-#updates-text {
-    width: 32vw;
-    height: 7vw;
-    border: 2px solid var(--neon-yellow);
-    border-radius: 10px;
-    color: var(--black);
+#home-link {
     font-family: "nimbus-sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.25vw;
-    overflow: auto;
-}
-
-.update {
-    margin-top: 1vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    margin-bottom: 2vw;
-}
-
-canvas {
-  display: block;
-}
-
-.canvas-container {
-    display: flex;
-    align-items: center;
-    height: 32vw;
-    width: 32vw;
-}
-
-#homepagesketch {
-    display: flex;
-    flex-direction: column;
-}
-
-#cool-stuff {
     color: var(--black);
-    font-family: "clarendon-urw", serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 1.25vw;
-    background: var(--neon-yellow);
 }
 
-#right-column {
-    height: 66vw;
-    width: 56vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#row-one {
-    height: 54vw;
-    width: 58vw;
+#top-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 80vw;
 }
 
-#intro {
-    height: 52vw;
-    width: 40vw;
+#educational-links-container {
     border: 2px solid var(--neon-yellow);
     border-radius: 10px;
-}
-
-#intro-header {
-    height: 7vw;
-    width: 40vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "clarendon-urw", serif;
-    font-style: normal;
-    font-size: 1.7vw;
-    color: var(--black);
-    background: var(--neon-yellow);
-}
-
-#intro-body {
-    height: 45vw;
-    width: 40vw;
+    width: 38vw;
+    height: 30vw;
+    background: var(--black);
     color: var(--neon-yellow);
-    text-align: center;
     overflow: auto;
 }
 
-#intro-text {
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+.cool-link, .cool-link:visited, .educational-link, .educational-link:visited {
+    color: var(--neon-yellow);
     font-family: "nimbus-sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3vw;
-    color: var(--black);
+    margin-left: 10px;
 }
 
-#row-two {
-    height: 8vw;
-    width: 56vw;
+.cool-link:hover, .educational-link:hover, #home-link:hover {
+    color: var(--neon-pink);
+    background: var(--neon-yellow);
+}
+
+#fun-links-container {
+    border: 2px solid var(--neon-yellow);
+    border-radius: 10px;
+    width: 38vw;
+    height: 30vw;
+    background: var(--black);
+    color: var(--neon-yellow);
+    overflow: auto;
+}
+
+#coding-gallery-title, #big-projects-title {
+    text-align: center;
+    font-family: "clarendon-urw", serif;
+}
+
+#big-projects-title {
+    color: var(--neon-yellow);
+}
+
+#coding-gallery-title {
+    color: var(--neon-yellow);
+}
+
+#media-links {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-#pengergif {
-    width: 7.5vw;
-    height: 7.5vw;
+.media-block {
+    width: 80vw;
+    height: 23vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
-.canvas-container {
-    border-radius: 5px;
-    height: 32vw;
-    width: 32vw;
-    margin-top: 5px;
+.media-block-heading {
+    font-family: "clarendon-urw", serif;
     margin-bottom: 5px;
 }
 
-#computer-img, #book-img, #hand-img {
-    width: 15vw;
-    margin-left: 1.5vw;
+.even-block {
+    background: var(--white);
+    border: 2px solid var(--neon-pink);
+    color: var(--neon-pink);
 }
 
-#lightbulb-img, #cat-img {
-    width: 10vw;
-    height: 10vw;
+.odd-block {
+    background: var(--black);
+    color: var(--white);
 }
 
-#cat-img:hover, #lightbulb-img:hover {
-    cursor: pointer;
+.recs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80vw;
+    height: 18vw;
 }
 
-.header-image-container {
-    width: 10vw;
-    height: 10vw;
+.album-rec {
+    border: 2px solid var(--neon-yellow);
+    background: var(--white);
+    border-radius: 10px;
+    height: 13vw;
+    width: 13vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.current_rec {
+    height: 13vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.album-cover {
+    width: 12vw;
+    height: 12vw;
+    border-radius: 10px;
+    border: 2px solid var(--neon-yellow);
+}
+
+.tv-img {
+    height: 12vw;
+    border-radius: 10px;
+    border: 2px solid var(--neon-yellow);
+}
+
+.book-cover {
+    height: 12vw;
+    border-radius: 10px;
+    border: 2px solid var(--neon-yellow);
+}
+
+.current-subheader {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-family: "nimbus-sans", sans-serif;
+}
+
+.media-title {
+    margin-top: 1px;
+    font-family: "nimbus-sans", sans-serif;
+    font-size: 1.1vw;
+    font-style: italic;
+    text-align: center;
+}
+
+#yamaha-qy70 {
+    height: 12vw;
+    border-radius: 10px;
+    border: 2px solid var(--neon-yellow);
 }

@@ -5,6 +5,16 @@
     --black: #222224;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: var(--neon-pink);
+  background: var(--neon-yellow);
+}
+
+::selection {
+  color: var(--neon-pink);
+  background: var(--neon-yellow);
+}
+
 body {
     background: var(--white);
 }
@@ -15,7 +25,24 @@ body {
     align-items: center;
 }
 
+#gallery {
+    font-family: "nimbus-sans", sans-serif;
+}
+
 #heading {
-    font-family: "clarendon-urw", sans-serif;
+    font-family: "clarendon-urw", serif;
     color: var(--black);
+}
+
+a:visited {
+    color: var(--black);
+}
+
+a:hover {
+    background: var(--neon-yellow);
+    color: var(--neon-pink);
+}
+
+#home-link {
+    font-family: "nimbus-sans", sans-serif;
 }
