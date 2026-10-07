@@ -1,0 +1,77 @@
+:root {
+    --neon-yellow: #D9FF00;
+    --neon-pink: #FF0059;
+    --white: #f6f8f7;
+    --black: #222224;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--neon-pink);
+  background: var(--neon-yellow);
+}
+
+::selection {
+  color: var(--neon-pink);
+  background: var(--neon-yellow);
+}
+
+body {
+    background: var(--white);
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page-intro {
+    width: min(90vw, 900px);
+    text-align: center;
+}
+
+#header {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: var(--black);
+    font-family: "clarendon-urw", serif;
+    font-size: 32px;
+}
+
+p {
+    color: var(--black);
+    font-family: "nimbus-sans", sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: var(--black);
+    font-family: "nimbus-sans", sans-serif; 
+}
+
+a:hover {
+    color: var(--neon-pink);
+    background: var(--neon-yellow);
+}
+
+#glitchy-beats-body {
+    width: min(90vw, 1200px);
+    display: flex;
+    flex-direction: row;
+}
+
+#glitchy-beats-topics {
+    border: 1px solid red;
+    width: 40vw;
+}
+
+#glitchy-beats-img {
+    border: 1px solid blue;
+    width: 60vw;
+}

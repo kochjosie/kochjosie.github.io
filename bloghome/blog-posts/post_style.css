@@ -1,0 +1,61 @@
+:root {
+    --neon-yellow: #D9FF00;
+    --white: #f6f8f7;
+    --black: #222224;
+    --neon-pink: #FF0059;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--neon-pink);
+  background: var(--neon-yellow);
+}
+
+::selection {
+  color: var(--neon-pink);
+  background: var(--neon-yellow);
+}
+
+body {
+    background: var(--white);
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header {
+    font-family: "clarendon-urw", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--black);
+}
+
+#text {
+    font-family: "nimbus-sans", sans-serif;
+    color: var(--black);
+    width: min(90vw, 1000px);
+}
+
+#home-link {
+    font-family: "nimbus-sans", sans-serif;
+    color: var(--black);
+}
+
+.paragraph {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+a:visited {
+    color: var(--black);
+}
+
+a:hover {
+    background: var(--neon-yellow);
+    color: var(--neon-pink);
+}
