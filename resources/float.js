@@ -70,3 +70,4 @@ function makeTextFloat(selector) {
 }
 
 makeTextFloat('#heading');
+makeTextFloat('#fav-media')

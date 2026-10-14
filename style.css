@@ -67,10 +67,12 @@ a:link {
     color: var(--black);
 }
 
-#blog-link:hover, #coding-link:hover, #art-link:hover, #misc-link:hover, #contact-link:hover{
+#blog-link:hover, #coding-link:hover, #misc-link:hover, #contact-link:hover,
+#new-media-link:hover, #sculpture-link:hover {
     background: var(--neon-yellow);
     color: var(--neon-pink);
     font-size: 2.75vw;
+    cursor: pointer;
 }
 
 .update-link:hover {

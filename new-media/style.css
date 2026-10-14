@@ -1,0 +1,90 @@
+:root {
+    --neon-yellow: #D9FF00;
+    --neon-pink: #FF0059;
+    --white: #f6f8f7;
+    --black: #222224;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--neon-pink);
+  background: var(--neon-yellow);
+}
+
+::selection {
+  color: var(--neon-pink);
+  background: var(--neon-yellow);
+}
+
+body {
+    background: var(--white);
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-link {
+    font-family: "nimbus-sans", sans-serif;
+}
+
+#home-link:visited {
+    color: var(--black);
+}
+
+#home-link:hover {
+    background: var(--neon-yellow);
+    color: var(--neon-pink);
+}
+
+#header {
+    color: var(--black);
+    font-family: "clarendon-urw", serif;
+    font-size: 2vw;
+}
+
+#page-content {
+    width: min(90vw, 1250px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#gallery {
+    border: 2px solid var(--neon-pink);
+    border-radius: 10px;
+    width: min(65vw, 812px);
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#projects-sidebar {
+    border: 2px solid var(--neon-yellow);
+    border-radius: 10px;
+    background: var(--black);
+    width: min(25vw, 312px);
+    color: var(--neon-yellow);
+}
+
+.subheader {
+    font-family: "clarendon-urw", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cc-work {
+    width: min(65vw, 812px);
+    height: 950px;
+    border: 1px solid black;
+    display: block;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+    border: 1px solid var(--neon-pink);
+}

@@ -9,6 +9,16 @@ body {
     background: var(--white);
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: var(--neon-pink);
+  background: var(--neon-yellow);
+}
+
+::selection {
+  color: var(--neon-pink);
+  background: var(--neon-yellow);
+}
+
 #page-container {
     display: flex;
     flex-direction: column;
@@ -33,9 +43,8 @@ a:visited {
     color: var(--black);
 }
 
-a:hover {
+#home-link:hover {
     background: var(--neon-yellow);
-    font-family: "nimbus-sans", sans-serif;
     color: var(--neon-pink);
 }
 
@@ -82,4 +91,9 @@ a:hover {
     margin-right: 10px;
     margin-bottom: 10px;
     font-size: 1.5vw;
+}
+
+.post-link:hover {
+    background: var(--neon-yellow);
+    color: var(--neon-pink);
 }

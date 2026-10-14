@@ -71,7 +71,8 @@ function makeTextFloat(selector) {
 
 makeTextFloat('#blog-link');
 makeTextFloat('#coding-link');
-makeTextFloat('#art-link');
+makeTextFloat('#new-media-link');
+makeTextFloat('#sculpture-link');
 makeTextFloat('#misc-link');
 makeTextFloat('#contact-link');
 makeTextFloat('#heading');

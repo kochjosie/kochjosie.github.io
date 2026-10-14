@@ -1,0 +1,38 @@
+To make things clear off the bat, I'm not particularly anti-AI or pro-AI. Also, in this post, I will be focusing on LLMs and 
+generative AI. I will specify when I'm talking about types of machine learning that are more deterministic in nature.
+
+I'm tired of people using AI to cheat. I'm tired of people using AI as an excuse not to learn. I'm tired of people using 
+AI as an excuse to not actually make something creative or stress their brain and learn technical skills. I think its 
+disgusting that low-income community leaders are allowing the building of data centers in poorer Americans backyards, despite 
+our knowledge that they create noise, light, and chemical pollution and don't belong so close to human habitats. I also think 
+AI art and AI music are quite ugly. Not artists and designers who experimented using it as part of their creative process but 
+people who use it to generate the art itself. This example is particularly obvious in the gaudy, tacky AI posters that seem 
+to litter electric poles and instagram ads nowadays. Its a way to avoid paying a skilled worker for their work and its 
+aesthetically ugly.
+
+On the other hand, I'm tired of people who have next to no technical literacy criticizing AI or datacenters. I'm tired of people 
+who spend all their time on social media saying we should burn down every data center. I'm tired of people refusing to use AI models 
+in ways that make perfect sense, like removing the background from an object in photoshop, largely because they don't know the 
+difference between the different kinds of AI. I'm tired of people acting like AI is taking their job.
+
+AI is not taking your job. Employers who don't want to treat employees fairly are taking away entry level jobs, and AI is a convenient 
+excuse. If it wasn't AI, it would be something else. You are never safe from someone who doesn't respect you. You are never safe 
+from employers who can't think long term, who think that investing in young workers is a waste of time and money. The art students 
+I know seem to grasp this concept better. Engineering students on the other hand tend to believe they can out-work or out-study this 
+phenomenon. They believe we live in a meritocratic system, which I do not.
+
+As for the environmental argument, this is a huge mixed bag. I think we need to have a real discussion about how mainstream AI use is 
+a part of a larger trend of companies producing inefficient bloatware and SaaS startups having no real connection to the fact that 
+all of this 'virtual' stuff is based on very real, tangible hardware. Good engineering cares about the sustainability of its make. 
+Good engineering does not divorce itself from the physical world. It is deeply embedded in it.
+
+I'm interested in a world where we respect the technical complexity of AI, training small models on well-curated data sets for specific 
+purposes. For example, my thermodynamics professor mentioned that he's currently training a model to help him spend less time grading 
+our exams. I think this is an appropriate use of the technology. I look forward to a day where he can focus as much as possible on 
+his research, his teaching, and personal interests rather than doing administrative tasks that add very little to life. Just like 
+before, if there is an error on an exam, a student is able to request a re-grade or bring it up to the professor. This is especially 
+true as exams would be graded faster. On top of that, once the model is trained, I would imagine it would function largely quite 
+deterministically, meaning it wouldn't be taking up that much computational power.
+
+Anyways, sorry for the rant post. I just felt the need to get these thoughts out somewhere. I may end up re-writting this later in a way 
+thats more structured and clear, but, for now, these are my thoughts.
